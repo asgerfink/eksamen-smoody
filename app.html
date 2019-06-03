@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Scripts -->
+    <script type="text/javascript" src="smoody.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Meta tags -->
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="billeder/logo/logo-icon.png" type="image/x-icon"/>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name=”description” content=”smoody er en applikation hvor du styrker dine smoothies evner, stiger i level og kan tilpasse netop din smoothie, så den passer til hvad du kan lide.”/>
+    <meta name=”keywords” content=”smoody applikation, app, smoothie, bowl, frugter, ingredienser, varianter, drikke, opskrifter”/>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+<body>
+  <!-- baggrundsbilleder -->
+  <img class="baggrund1" src="billeder/12.png">
+  <img class="baggrund2" src="billeder/13.png">
+            
+            <!-- Logo og Navigationsbar -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light skygge  ">
+                      <a href="index.html"><img src="billeder/logo/logo-small.png" class="navbar-brand img-responsive modmidten"></a>
+                      <button class="navbar-toggler #navbarNavDropdown dropdown-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse navbarhoejre" id="navbarNavDropdown">
+                        <ul class="navbar-nav flex-wrap">
+                          <li class="nav-item active">
+                            <a class="nav-link hover" href="#">APP</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="om.html">OM</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                          </li>
+                        </ul>
+                      </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            
+          <div class="container">
+            <!-- Button til top -->
+              <a><img src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/07/15072159/Up-Arrow-PNG-High-Quality-Image-1024x538.png" onclick="topFunction()" id="myBtn"></a>        
+                <h1 class="overskriftmereafstand">SE HVORDAN SMOODY FUNGERER</h1>
+<!-- Her er koden for app siden til computer -->
+<!-- her har jeg lavet en row, hvor de første 6 colonner er tomme, for at h2 på 2 som starter på 7 colonne følger griddet-->
+<div class="appsidecomputer">
+<div class="row">
+    <div class="col-lg-6">
+      <h2 class="Skjul">
+    </div>
+  
+    <div class="col-lg-6">
+      <h2 class="skjult"></h2>
+    </div>
+  </div> 
+
+  <!-- Element og tekst 1 -->
+  <div class="row">
+      <div class="col-lg-6">
+        <img class="appserie billedeet animationtest" id="pushin" src="billeder/billeder-til-appsiden/foerste-side.png" alt="første side" class="img-responsive">
+      </div>
+       
+      <div class="col-lg-6">
+        <h2 class="nedad">Din foretrukne smoothie app</h2>
+          <p>Log ind eller opret dig som bruger her</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- Element og tekst 2 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Log ind</h2>
+        <p>Er du allerede medlem, så log ind her.<br> Hvis ikke; viser vi hvordan du opretter dig længere nede</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/logind.png" alt="log-in side" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 3 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/glemt-kodeord.png" alt="glemt kodeord side" class="img-responsive">
+    </div>
+     
+    <div class="col-lg-6">
+      <h2 class="nedad">Glemt kodeord</h2>
+        <p>Har du glemt dit kodekord, kan du ændre det her; du vil herfra få en nulstillings-kode tilsendt pr. mail</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 4 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Opret bruger</h2>
+        <p>Har du ingen bruger, kan du oprette den her.<br> Alt du skal gøre, er blot at indtaste følgende oplysninger</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/opret-bruger.png" alt="opret bruger side" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 5 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/kom-igang.png" alt="kom igang side" class="img-responsive">
+    </div>
+              
+    <div class="col-lg-6">
+      <h2 class="nedad">Guide til applikationen</h2>
+        <p>Er det første gang på Smoody, så kan du gennemgå denne hurtige guide til applikationen, samt funktionerne. <br><br> Vi garanterer at du herefter har nemt ved at navigere rundt</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 6 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Kom igang</h2>
+        <p>Efter du har gennemgået guiden, eller sprunget den over, lander du på denne startside.<br><br>Her har du forskellige muligheder</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/startside.png" alt="startside" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 7 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/soeg1.png" alt="søg side 1" class="img-responsive">
+    </div>
+      
+    <div class="col-lg-6">
+      <h2 class="nedad">Kategorier</h2>
+        <p>Du kunne eksempelvis først prøve at benytte dig af vores søgefunktion. <br><br> Her kan du blive inspireret til nye spændende opskrifter igennem vores kategori-funktion</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 8 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Søg</h2>
+        <p>Vil du lave en mere avanceret søgning, eller søger du på en bestemt smoothie, kan du trykke på søge-knappen.<br><br> Samtidigt kan du holde øje med seneste søgninger</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/soeg.png" alt="søg side 2" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 9 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/kategori-side.png" alt="kategori side" class="img-responsive">
+    </div>
+     
+    <div class="col-lg-6">
+      <h2 class="nedad">Bliv inspireret</h2>
+        <p>Kan kategori-forslagene, eller den avancerede søgning ikke hjælpe, så rul længere ned, for at finde andre sjove opskrifter</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 10 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Skal den drikkes eller spises?</h2>
+        <p>Når du har fundet den smoothie du vil lave, så kan du selv vælge om du vil drikke eller spise den.<br><br> Klik blot på din foretrukne måde</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/konsistens-side.png" alt="konsistens side" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 11 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/opskrift-side.png" alt="opskrift side" class="img-responsive">
+    </div>
+              
+    <div class="col-lg-6">
+      <h2 class="nedad">Opskrift</h2>
+        <p>Nu kan du se opskriften på din smoothie. <br>Her finder du de ingredienser, som du skal bruge samt antal</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 12 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Indhold af ingredienserne</h2>
+        <p>Du kan derudover også klikke på de enkelte ingeredienser, for at se hvad ingredienset indeholder;<br> eksempelvis hvilke vitaminer det indeholder.<br><br> Derudover kan du se hvad ingredienset vil bidrage med til din smoothie</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/ingrediens.png" alt="ingrediensside" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 13 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/animation1.png" alt="animationsside 1" class="img-responsive">
+    </div>
+      
+    <div class="col-lg-6">
+      <h2 class="nedad">Step-by-step guide</h2>
+        <p>Når du er klar til at lave din smoothie, trykker du "Lav smoothie", hvor du gradvist bliver vist igennem de forskellige trin - indtil du er færdig</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 14 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Scroll for at komme videre</h2>
+        <p>Når du føler dig klar til det næste trin, så kan du blot bladre videre - eller trykke på pilene</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/animation2.png" alt="animationsside 2" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 15 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/animation3.png" alt="animationsside 3" class="img-responsive">
+    </div>
+     
+    <div class="col-lg-6">
+      <h2 class="nedad">Se hvordan det skal gøres</h2>
+        <p>Nyd de flotte illustrationer, og lav dine smoothie på en sjov måde</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 16 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Den færdige drikke-smoothie</h2>
+        <p>Når du er færdig med din smoothie, kommer du ind på et billede, som viser det færdige resultat - Tryk nu næste</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/gennemfoert-drikke.png" alt="gennemført drik" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 17 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/gennemfoert-bowl.png" alt="gennemført bowl" class="img-responsive">
+    </div>
+              
+    <div class="col-lg-6">
+      <h2 class="nedad">Den færdige spise-smoothie</h2>
+        <p>Det samme hvis du har valgt at lave en bowl - tryk nu næste</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 18 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Få dine points!</h2>
+        <p>Når du har trykket på "Næste", vil du nu få udleveret dine points i procent </p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/level-stigning.png" alt="level stigningsside" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 19 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/brugersiden.png" alt="brugersiden" class="img-responsive">
+    </div>
+      
+    <div class="col-lg-6">
+      <h2 class="nedad">Se din udvikling</h2>
+        <p>For hver gang du laver en smoothie, kommer du højere op i level. Nu kan du se hvor mange smoothies du har lavet.<br><br> Kunne du lide din smoothie, kan du trykke på hjertet i bunden <br><br>Ønsker du at se andre gemte opskrifter kan du trykke på flaget <br><br> Vil du se gennemførte opskrifter, kan du trykke på fluebenet</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 20 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Gemte opskrifter</h2>
+        <p>Her får du en oversigt over dine gemte smoothies.<br> Tryk på billedet og lav dem igen</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/gemte-side.png" alt="gemt-side" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 21 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/favorit-side.png" alt="favorit side" class="img-responsive">
+    </div>
+      
+    <div class="col-lg-6">
+      <h2 class="nedad">Foretrukne opskrifter</h2>
+        <p>Her ser du en oversigt over dine favoritopskrifter. Tryk på billedet og lav dem igen</p>
+    </div>
+  </div>
+
+  <!-- Element og tekst 22 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="venstre nedad">Gennemførte opskrifter</h2>
+        <p>Her ser du en oversigt over gennemførte opskrifter. Tryk på billedet og lav dem igen</p>
+    </div>
+
+    <div class="col-lg-6">
+      <img class="appserie pull-right billedeto" src="billeder/billeder-til-appsiden/gennemfoert-side.png" alt="favoritside" class="img-responsive">                   
+    </div>
+  </div>
+
+  <!-- Element og tekst 23 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="appserie billedeet" src="billeder/billeder-til-appsiden/indstillinger.png" alt="indstillinger" class="img-responsive">
+    </div>
+      
+    <div class="col-lg-6">
+      <h2 class="nedad">Indstillinger</h2>
+        <p>Oplever du problemer i applikationen, eller ønsker du at logge ud, så tryk på tandhjulet</p>
+    </div>
+  </div> 
+
+            <!-- Download Knapper computerstørrelse -->
+            <div class="row">
+                <div class="col-lg-6">
+                  <a href="https://xd.adobe.com/view/e727126c-d14b-4f18-4d02-f7e81c17d0eb-9116/screen/c49849b8-0a9f-4c13-b47b-2fc58a4be750/Step-1?fbclid=IwAR0M3l4-Mhzwv6drZVRZHD1Mq46H7q0akpjoNqJzjte-cAugXUyKhpx_qGw" target="_blank"><img class="downloadknapper downloadknaptilvenstre img-responsive" onMouseOver="this.src='billeder/appicon/googleplay-hover.png';"
+                  onmouseout="this.src='billeder/appicon/googleplay.png';"
+                  src="billeder/appicon/googleplay.png" alt="hover effect"/></a>
+                </div>
+            
+                <div class="col-lg-6">
+                  <a href="https://xd.adobe.com/view/e727126c-d14b-4f18-4d02-f7e81c17d0eb-9116/screen/c49849b8-0a9f-4c13-b47b-2fc58a4be750/Step-1?fbclid=IwAR0M3l4-Mhzwv6drZVRZHD1Mq46H7q0akpjoNqJzjte-cAugXUyKhpx_qGw" target="_blank"><img class="downloadknapper img-responsive" onMouseOver="this.src='billeder/appicon/appstore-hover.png';"
+                  onmouseout="this.src='billeder/appicon/appstore.png';"
+                  src="billeder/appicon/appstore.png" alt="hover effect"/></a>
+                </div>
+            </div>
+<!-- Slutdiv appserie computer -->
+</div>
+
+
+
+
+         
+
+        
+        
+        
+
+<!-- Her er koden for app siden til mobil-->
+              <div class="container appmobil">
+                
+                <!-- Element og tekst 1 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Din foretrukne smoothie-app</h2>
+                        <p>Log ind eller opret dig som bruger her</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/foerste-side.png" alt="førsteside" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 2 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Log ind</h2>
+                        <p>Er du allerede medlem, så log ind her.<br> Hvis ikke; viser vi hvordan du opretter dig længere nede</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/logind.png" alt="log ind side" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 3 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Glemt kodeord</h2>
+                        <p>Har du glemt dit kodekord, kan du ændre det her; du vil herfra få en nulstillings-kode tilsendt pr. mail</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/glemt-kodeord.png" alt="glemt kode side" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 4 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Opret bruger</h2>
+                        <p>Har du ingen bruger, kan du oprette den her.<br> Alt du skal gøre, er blot at indtaste følgende oplysninger</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/opret-bruger.png" alt="opret bruger side" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 5 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Guide til applikationen</h2>
+                        <p>Er det første gang på Smoody, så kan du gennemgå denne hurtige guide til applikationen, samt funktionerne. <br><br> Vi garanterer at du herefter har nemt ved at navigere rundt</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/kom-igang.png" alt="kom igang side" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 6 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Kom igang</h2>
+                        <p>Efter du har gennemgået guiden, eller sprunget den over, lander du på denne startside.<br><br>Her har du forskellige muligheder</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/startside.png" alt="startside" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 7 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Kategorier</h2>
+                        <p>Du kunne eksempelvis først prøve at benytte dig af vores søgefunktion. <br><br> Her kan du blive inspireret til nye spændende opskrifter igennem vores kategori-funktion</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/soeg1.png" alt="første søge side" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 8 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Søg</h2>
+                        <p>Vil du lave en mere avanceret søgning, eller søger du på en bestemt smoothie, kan du trykke på søge-knappen.<br><br> Samtidigt kan du holde øje med seneste søgninger</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/soeg.png" alt="søg side" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 9 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Bliv inspireret</h2>
+                        <p>Kan kategori-forslagene, eller den avancerede søgning ikke hjælpe, så rul længere ned, for at finde andre sjove opskrifter</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/kategori-side.png" alt="kategoriside" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 10 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Skal den drikkes eller spises?</h2>
+                        <p>Når du har fundet den smoothie du vil lave, så kan du selv vælge om du vil drikke eller spise den.<br><br> Klik blot på din foretrukne måde</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/konsistens-side.png" alt="konsistensside" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 11 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Opskrift</h2>
+                        <p>Nu kan du se opskriften på din smoothie. <br>Her finder du de ingredienser, som du skal bruge samt antal</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/opskrift-side.png" alt="opskriftside" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 12 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Indhold af ingredienserne</h2>
+                        <p>Du kan derudover også klikke på de enkelte ingeredienser, for at se hvad ingredienset indeholder;<br> eksempelvis hvilke vitaminer det indeholder.<br><br> Derudover kan du se hvad ingredienset vil bidrage med til din smoothie</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/ingrediens.png" alt="ingrediensside" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 13 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Step-by-step guide</h2>
+                        <p>Når du er klar til at lave din smoothie, trykker du "Lav smoothie", hvor du gradvist bliver vist igennem de forskellige trin - indtil du er færdig</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie  " src="billeder/billeder-til-appsiden/animation1.png" alt="animationsside 1" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 14 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Scroll for at komme videre</h2>
+                        <p>Når du føler dig klar til det næste trin, så kan du blot bladre videre - eller trykke på pilene</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/animation2.png" alt="animationsside 2" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 15 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Se hvordan det skal gøres</h2>
+                        <p>Nyd de flotte illustrationer, og lav dine smoothie på en sjov måde</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/animation3.png" alt="animationsside 3" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 16 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Den færdige drikke-smoothie</h2>
+                        <p>Når du er færdig med din smoothie, kommer du ind på et billede, som viser det færdige resultat - Tryk nu næste</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/gennemfoert-drikke.png" alt="gennemført drik side" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 17 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Den færdige spise-smoothie</h2>
+                        <p>Det samme hvis du har valgt at lave en bowl - tryk nu næste</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/gennemfoert-bowl.png" alt="gennemført bowl side" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 18 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Få dine points!</h2>
+                        <p>Når du har trykket på "Næste", vil du nu få udleveret dine points i procent</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/level-stigning.png" alt="level stigningsside" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 19 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Se din udvikling</h2>
+                        <p>For hver gang du laver en smoothie, kommer du højere op i level. Nu kan du se hvor mange smoothies du har lavet.<br><br> Kunne du lide din smoothie, kan du trykke på hjertet i bunden <br><br>Ønsker du at se andre gemte opskrifter kan du trykke på flaget <br><br> Vil du se gennemførte opskrifter, kan du trykke på fluebenet</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/brugersiden.png" alt="bruger side" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 20 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Gemte opskrifter</h2>
+                        <p>Her får du en oversigt over dine gemte smoothies.<br> Tryk på billedet og lav dem igen</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/gemte-side.png" alt="gemte opskrifter" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 21 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Foretrukne opskrifter</h2>
+                        <p>Her ser du en oversigt over dine favoritopskrifter. Tryk på billedet og lav dem igen</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/favorit-side.png" alt="favoritside" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 22 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Gennemførte opskrifter</h2>
+                        <p>Her ser du en oversigt over gennemførte opskrifter. Tryk på billedet og lav dem igen</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/gennemfoert-side.png" alt="gennemførte" class="img-responsive">                   
+                    </div>
+                </div>
+
+                <!-- Element og tekst 23 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <h2 class="">Indstillinger</h2>
+                        <p>Oplever du problemer i applikationen, eller ønsker du at logge ud, så tryk på tandhjulet</p>
+                    </div>
+      
+                    <div class="col-lg-6">
+                      <img class="appserie" src="billeder/billeder-til-appsiden/indstillinger.png" alt="indstillinger" class="img-responsive">                   
+                    </div>
+                </div>
+
+            <!-- Download Knapper mobilstørrelse -->
+            <div class="row">
+                <div class="col-lg-6">
+                  <a href="https://xd.adobe.com/view/e727126c-d14b-4f18-4d02-f7e81c17d0eb-9116/screen/c49849b8-0a9f-4c13-b47b-2fc58a4be750/Step-1?fbclid=IwAR0M3l4-Mhzwv6drZVRZHD1Mq46H7q0akpjoNqJzjte-cAugXUyKhpx_qGw" target="_blank"><img class="img-responsive w-100 dlknapmobil" onMouseOver="this.src='billeder/appicon/googleplay-hover.png';"
+                  onmouseout="this.src='billeder/appicon/googleplay.png';"
+                  src="billeder/appicon/googleplay.png" alt="hover effect"/></a>
+                </div>
+            
+                <div class="col-lg-6">
+                  <a href="https://xd.adobe.com/view/e727126c-d14b-4f18-4d02-f7e81c17d0eb-9116/screen/c49849b8-0a9f-4c13-b47b-2fc58a4be750/Step-1?fbclid=IwAR0M3l4-Mhzwv6drZVRZHD1Mq46H7q0akpjoNqJzjte-cAugXUyKhpx_qGw" target="_blank"><img class="img-responsive w-100 dlknapmobil" onMouseOver="this.src='billeder/appicon/appstore-hover.png';"
+                  onmouseout="this.src='billeder/appicon/appstore.png';"
+                  src="billeder/appicon/appstore.png" alt="hover effect"/></a>
+                </div>
+              </div>
+
+            <!-- Her slutter container for mobildiv-->
+            </div>
+
+
+                              <!-- SlutDiv Container -->
+        </div>
+             <!-- Referencer -->
+             <div class="container-fluid position-absolute trustpilot-widget skygge">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="wrapper-left">
+                      <h3 class="title">Fremragende</h3>
+                        <div class="rating">
+                          <img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive">
+                        </div>
+                          <div class="info">
+                            Baseret på <a href="https://www.trustpilot.com/" target="_blank" class="review-count">226 anmeldelser</a>
+                          </div>
+                              <div class="brand-logo">
+                                <img src="https://lh3.googleusercontent.com/-j30uWtPj9lU/W-UrMp5GjSI/AAAAAAAADZg/3e2vZpgYzQQp_IvtZkeBv-xrs1KHmkqPwCL0BGAYYCw/h82/2018-11-08.png" class="img-responsive"> <p>Trustpilot</p>
+                              </div>
+                              <br><br>
+                              <a href="#"><img class="footerlogo hide" src="billeder/logo/favicon.png" class="img-responsive"></a>
+                    </div>
+                  </div>
+                <div class="col-md-9 reviews">
+              <div id="Carousel" class="carousel slide">
+                            
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="pull-left rating hide">
+                            <img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive hide">
+                          </div>
+                              <div class="pull-right date hide">
+                              50 timer siden
+                              </div>            
+                        </div>
+                        <div class="col-md-12">
+                          <div class="title hide">Denne APP har virkelig udvidet min horisont..</div>
+                            <div class="descriptions hide">Jeg syntes appen var super lækker og indeholdte en masse gode..</div>
+                              <div class="name hide">Cilje Bjerre</div><br><br>
+                                <h3 class="bold hide">Kontakt os</h3>
+                                  <p class="samlet hide">+45 7512 1313</p>
+                                  <p class="samlet1 hide">kontakt@smoody.dk</p>
+                        </div>
+                      </div>  
+                    </div>
+                    <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="pull-left rating">
+                            <img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive hide">
+                          </div>
+                              <div class="pull-right date hide">
+                              44 timer siden
+                              </div>            
+                        </div>
+                        <div class="col-md-12">
+                          <div class="title hide">Jeg elsker SMOODY!</div>
+                            <div class="descriptions hide">Begyndte at drikke smoothies hver dag efter jeg downloadede APP..</div>
+                              <div class="name hide">Emma Andersen</div><br><br>
+                              <a href="kampagne.html"><h3 class="bold kampagneside hide">Kampagner</h3></a>
+                              <a href="kampagne.html"><p class="samlet kampagneside hide">Bannere</p></a>
+                              <a href="kampagne.html"><p class="samlet1 kampagneside hide">Reklame</p></a>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col-md-4">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="pull-left rating">
+                              <img src="https://images-static.trustpilot.com/supportcenter/Trustpilot_ratings_5star-RGB.png" class="img-responsive hide">
+                            </div>
+                                <div class="pull-right date hide">
+                                18 timer siden
+                                </div>            
+                          </div>
+                            <div class="col-md-12">
+                              <div class="title hide">Har fundet mig en ny yndlings smoothie...</div>
+                                <div class="descriptions hide">Har manglet sådan en platform i rigtig lang tid! Kan især godt lide..</div>
+                                  <div class="name hide">Ole Henriksen</div><br><br>
+                                  
+                                  <a href="https://www.facebook.com/Smoody-455622835291854/?modal=admin_todo_tour" target="_blank"><img class="socialmedia footerop footertilhoejre" onMouseOver="this.src='billeder/ikoner/facebook-hover.png';"
+                                    onmouseout="this.src='billeder/ikoner/facebook.png';"
+                                    src="billeder/ikoner/facebook.png" alt="hover effect"/></a>
+                                                 
+                                  <a href="https://www.instagram.com/appsmoody/?fbclid=IwAR2PgFNW0bF3hrQlrL83OZm55dw3c2owgPhLU08MAqkLezmfiPY_vIzT9Gs" target="_blank"><img class="socialmedia footerop" onMouseOver="this.src='billeder/ikoner/instagram-hover.png';"
+                                    onmouseout="this.src='billeder/ikoner/instagram.png';"
+                                    src="billeder/ikoner/instagram.png" alt="hover effect"/></a>
+                                          
+                                  <a href="https://www.linkedin.com/company/smoody/" target="_blank"><img class="socialmedia footerop" onMouseOver="this.src='billeder/ikoner/linkedin-hover.png';"
+                                    onmouseout="this.src='billeder/ikoner/linkedin.png';"
+                                    src="billeder/ikoner/linkedin.png" alt="hover effect"/></a>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+          </div>
+              </div>
+                </div>    
+                </div>
+
+                <!-- Dette kommer frem, når skærmen eskalerer til mobilstørrelse-->
+                <div class="row komfrem">
+                  <div class="col-6">
+                    <a href="kampagne.html"><p class="bold kampagneside komfrem hej">Kampagner</p></a>
+                    <a href="kampagne.html"><p class="samlet kampagneside komfrem hej">Bannere</p></a>
+                    <a href="kampagne.html"><p class="samlet1 kampagneside komfrem hej ">Reklame</p></a> 
+                  </div>
+  
+  
+  
+                  <div class="col-6">
+                    <p class="bold kampagneside komfrem hej">Kontakt os</p>
+                    <p class="samlet komfrem hej">+45 7512 1313</p>
+                    <p class="samlet1 komfrem hej">kontakt@smoody.dk</p>
+                  </div>
+                </div>
+             
+              </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>                
+        <script src='smoody.js'></script>
+      </body>
+</html>
